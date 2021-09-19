@@ -1,0 +1,132 @@
+body {
+  padding-top: 80px; }
+
+.header {
+  box-shadow: 0 4px 5px var(--navbar-shallow-color);
+  position: fixed;
+  background-color: var(--fondo-color);
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2; }
+
+.header__topNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  max-width: 980px;
+  margin: 0 auto; }
+
+.header__img {
+  height: 60px;
+  width: 75px;
+  align-items: center; }
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  font-family: "Atma";
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--primary-color);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  transition: 0.3s;
+  margin-top: 5px; }
+  .header__logo:hover {
+    color: crimson; }
+
+.header__logo-beer {
+  color: #ffd371; }
+
+.header__logo-text {
+  line-height: 0.6em; }
+
+.header__logo-textSec {
+  font-size: 15px;
+  color: #222121; }
+
+/* MENU */
+.header__menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.header__listMenu {
+  padding: 0 15px; }
+
+.header__menulink {
+  color: var(--text-color);
+  font-size: 16px;
+  padding: 5px;
+  font-family: "Atma";
+  font-weight: 500;
+  line-height: 70px;
+  transition: 0.3s; }
+  .header__menulink:hover {
+    background-color: crimson;
+    color: white;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+    border-radius: 10%; }
+
+.openMenu,
+.closeMenu {
+  display: none; }
+
+@media screen and (max-width: 774px) {
+  /* MENU */
+  .header__menu {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background-color: var(--menu-mobile-bg-color);
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s; }
+  .header__listMenu {
+    padding: 0; }
+  .header__menulink {
+    color: var(--primary-color);
+    text-shadow: 0 1px 1px gray;
+    font-family: "Atma";
+    line-height: 60px;
+    height: 100%; }
+  .openMenu,
+  .closeMenu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer; }
+  .closeMenu {
+    align-self: flex-end;
+    padding: 20px 15px; }
+  .closeMenu,
+  .openMenu img {
+    height: 30px; }
+  .menu_opened {
+    opacity: 1;
+    pointer-events: all; } }
+
+.fs-4 {
+  color: red; }
+
+.btn-enviar {
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: var(--text-color-inverso);
+  background-color: #f12020;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s; }
+  .btn-enviar:hover {
+    background: #000;
+    color: #f12020; }

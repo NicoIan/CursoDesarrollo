@@ -1,0 +1,235 @@
+.galeria{
+    background-color: #f7f7f7;
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .fotos{
+    flex: 1 1 40%;
+    margin: 10px 10px 0 0px;
+    
+    flex: 1 1 45%;
+    padding: 20px;
+    
+  }
+  
+  .fotos img{
+    width: 100%;
+    box-shadow:  6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .aside{
+    background: #53B8BB;
+    flex: 1 1 auto;
+  }
+  
+  .promociones{
+    background: #ffffff;
+  
+  }
+  
+  .footer {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    background: #000000;
+    height: 60px;
+  }
+  
+  .pie{
+    flex:1 1 auto;
+    background: #302f2f;
+    font-family: "Chivo";
+    font-size: 11px;
+    text-align: left;
+    padding: 4px;
+  }
+  
+  .pie a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .pie a:hover{
+    color: #DF2E2E;
+  }
+  
+  .redes{
+    display: flex;
+    flex:1 1 auto;
+    background: #302f2f;
+    justify-content: center;
+  }
+  
+  .redes a{
+    font-size: 18px;
+    padding: 0 15px;
+  }
+  
+  .redes a:hover{
+    color: #ffffff;
+  }
+  
+  .info{
+    flex:1 1 auto;
+    background: #FF4848;
+  }
+  
+  
+  .contenedor{
+    display: grid;
+    background-color: #FFD371;
+    grid-template-columns: 50% 30% 20%;
+  }
+  
+  .caja{
+    background-color: #53B8BB;
+    color: #bdbdbd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  
+  
+  
+  body {
+    background-color: rgba(128, 128, 128, 0.555);
+    margin: 0;
+    padding: 0;
+    font-family: "Chivo";
+  }
+  
+  /* nav {
+    background-color: #ffffff;
+  } */
+  
+  .encabezado {
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: #ffffff;
+    height: 15px;
+    padding: 10px;
+  }
+  
+  .encabezado a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  
+  
+  
+  .menuArriba {
+    font-family: "Atma";
+    text-align: center;
+    letter-spacing: 3px;
+    display: inline;
+  }
+  
+  .menuArriba li {
+    list-style-type: none;
+    display: inline;
+    padding: 5px;
+  }
+  
+  .menuArriba a {
+    color: darkslategrey;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .menuArriba a:hover {
+    background-color: aqua;
+    color: black;
+  }
+  
+  hr {
+    height: 0.5px;
+    background-color: #bdbdbd;
+  }
+  
+  .loMasPedido {
+    background-color: beige;
+  }
+  
+  .Destacados {
+    list-style-type: none;
+  }
+  
+  .Destacados li {
+    display: inline;
+    padding: 5px;
+    border-image: 1px solid;
+  }
+  
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(29, 28, 28);
+    text-align: center;
+  }
+  
+  .titutlosFooter {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: #000000;
+  }
+  
+  .menuFooter {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+  }
+  
+  .menuFooter li {
+    list-style-type: none;
+    padding: 5px;
+  }
+  
+  .menuFooter a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  footer {
+    background-color: #cec29d;
+  }
+  
+  /*
+  ul {
+    list-style: none;
+    font-size: 0; /* truco por el uso de inline-block*/
+  }
+  
+  /*
+  ul a {
+    text-decoration: none;
+  }
+  
+  ul a:hover {
+    background-color: red;
+    color: #ffffff;
+  }
+  
+  li {
+    display: inline-block;
+    width: 15%;
+    position: relative;
+    font-size: 14px;
+    font-family: "Atma";
+  }
+  ul ul {
+    position: absolute;
+    display: none;
+  }
+  ul ul li {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    background-color: #ffffff;
+  }
+  ul li:hover ul {
+    display: block;
+  }
+  

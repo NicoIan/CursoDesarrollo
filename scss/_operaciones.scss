@@ -1,0 +1,30 @@
+$lista: red, white, yellow, gray;
+
+$primario: nth($lista, 1);
+
+.fs-4 {
+  color: $primario;
+}
+
+@mixin btnform($background, $weight) {
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: var(--text-color-inverso);
+  background-color: $background;
+  font-size: 1em;
+  font-weight: $weight;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    background: #000;
+    color: #f12020;
+  }
+}
+
+
+
+.btn-enviar{
+    @include btnform (#f12020, 600)
+}
