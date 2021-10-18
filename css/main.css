@@ -130,3 +130,53 @@ body {
   .btn-enviar:hover {
     background: #000;
     color: #f12020; }
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eecc0a;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04); }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 10px;
+  padding: 10px;
+  grid-auto-flow: dense; }
+
+.titulo__galeria {
+  text-align: center;
+  font-family: 'Atma';
+  color: white;
+  font-size: 2em;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8); }
+
+@media (min-width: 600px) {
+  .wide {
+    grid-column: span 2; }
+  .tall {
+    grid-row: span 2; } }
+
+.logo__text {
+  font-family: "Atma";
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--primary-color);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8); }
+
+.logo__text-beer {
+  color: #ffd371;
+  font-family: "Atma";
+  font-size: 40px;
+  font-weight: 500;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8); }

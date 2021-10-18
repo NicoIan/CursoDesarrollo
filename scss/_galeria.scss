@@ -1,10 +1,9 @@
-
 .grid-item {
     display: flex;
     align-items: center;
     justify-content: center;
   
-    background-color: #03afff;
+    background-color: #eecc0a;
     border-radius: 4px;
     transition: transform 0.3s ease-in-out;
   
@@ -22,9 +21,17 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-auto-rows: minmax(200px, auto);
-    gap: 20px;
-    padding: 20px;
+    gap: 10px;
+    padding: 10px;
     grid-auto-flow: dense;
+  }
+
+  .titulo__galeria{
+     text-align: center;
+     font-family: 'Atma';
+     color: white;
+     font-size: 2em;
+     text-shadow: 2px 2px 3px rgba($color: #000000, $alpha: 0.8);
   }
   
   @media (min-width: 600px) {

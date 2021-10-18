@@ -2,9 +2,18 @@
 @import "operaciones";
 @import "galeria";
 
+.logo__text {
+  font-family: "Atma";
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--primary-color);
+  text-shadow: 2px 2px 3px rgba($color: #000000, $alpha: 0.8);
+}
 
-
-
-
-
-  
+.logo__text-beer {
+  color: #ffd371;
+  font-family: "Atma";
+  font-size: 40px;
+  font-weight: 500;
+  text-shadow: 2px 2px 3px rgba($color: #000000, $alpha: 0.8);
+}
